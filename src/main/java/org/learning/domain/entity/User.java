@@ -5,12 +5,9 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import org.learning.domain.enums.UserLifeCycleStatus;
-
-import java.time.LocalDate;
 
 @Entity
-@Table
+@Table(name = "app_user")
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter @Setter
@@ -23,15 +20,13 @@ public class User {
     @Version
     private Long version;
 
-    @Column(name = "userName", updatable = false, nullable = false)
+    @Column(name = "username", updatable = false, nullable = false)
     private String userName;
 
+    @Column(name = "email_id")
     private String emailId;
 
-    private LocalDate dateOfBirth;
-
+    @Column(name = "country")
     private String country;
 
-    @Enumerated(EnumType.STRING)
-    private UserLifeCycleStatus userLifeCycleStatus;
 }
