@@ -10,7 +10,7 @@
         <exclude-unlisted-classes>false</exclude-unlisted-classes>
 
         <properties>
-            <property name="hibernate.generate_statistics" value="true" />
+<!--            <property name="hibernate.generate_statistics" value="true" />-->
 
             <property name="jakarta.persistence.jdbc.driver" value="org.postgresql.Driver" />
             <property name="jakarta.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/dev" />

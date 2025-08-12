@@ -1,16 +1,14 @@
 package org.learning.domain.entity;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 @Entity
 @Table(name = "app_user")
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter @Setter
+@Builder
 public class User {
 
     @Id
